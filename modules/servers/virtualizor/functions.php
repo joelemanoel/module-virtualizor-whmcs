@@ -190,16 +190,19 @@ function vparse_lang($str){
 
 if(!function_exists('vload_lang')){
 // Load Virtualizor Languages
-function vload_lang($lang = 'english'){
+//function vload_lang($lang = 'english'){
+function vload_lang($lang){
 	
 	global $vlang;
 
 	if(!@include_once(dirname(__FILE__).'/languages/'.$lang.'/index_lang.php')){
-		include_once(dirname(__FILE__).'/languages/english/index_lang.php');
+		include_once(dirname(__FILE__).'/languages/portuguese-br/index_lang.php');
+		// include_once(dirname(__FILE__).'/languages/english/index_lang.php');
 	}
 
 	if(!@include_once(dirname(__FILE__).'/languages/'.$lang.'/enduser_lang.php')){
-		include_once(dirname(__FILE__).'/languages/english/enduser_lang.php');
+		include_once(dirname(__FILE__).'/languages/portuguese-br/enduser_lang.php');
+		// include_once(dirname(__FILE__).'/languages/english/enduser_lang.php');
 	}
 	
 	$vlang = $l;
