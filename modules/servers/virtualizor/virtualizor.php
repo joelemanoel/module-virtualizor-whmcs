@@ -2322,6 +2322,9 @@ setInterval("iResize()", 1000);
 function load_virtpanel(){
 	var divID = "tab1";
 	if (!document.getElementById(divID)) {
+        divID = "caixamodulo";
+    }
+    	if (!document.getElementById(caixamodulo)) {
         divID = "domain";
     }
 	
@@ -2333,7 +2336,7 @@ function load_virtpanel(){
 		myDiv.id = "virtualizor_load_div";
 	}
 	
-	myDiv.innerHTML = \'<center style="padding:10px; background-color: #FAFBD9;">Loading Panel options ...</center><br /><br /><br />\';
+	myDiv.innerHTML = \'<center style="padding:10px; background-color: #FAFBD9;">Carregando...</center><br /><br /><br />\';
 	
 	document.getElementById(divID).appendChild(myDiv);
 	
