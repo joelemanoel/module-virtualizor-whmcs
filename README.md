@@ -1,1 +1,1 @@
-"# module-virtualizor-whmcs" 
+# module-virtualizor-whmcs
